@@ -2,11 +2,11 @@
 
 import { useRef, useEffect, useState } from 'react';
 import Link from 'next/link';
-import { ArrowRight, Users, Target, Globe, Zap, CheckCircle, Star, Calendar } from 'lucide-react';
+import { ArrowRight, Users, Target, Globe, Zap, CheckCircle, Calendar } from 'lucide-react';
 import TrainerProfileCard from '@/components/TrainerProfileCard';
 import { trainingPartners } from '@/data/trainingPartners';
 import FeatureCard from '@/components/FeatureCard';
-import SectionReveal from '@/components/SectionReveal';
+// import SectionReveal from '@/components/SectionReveal';
 import HeroSection from '@/components/HeroSection';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -329,7 +329,7 @@ export default function Home() {
 
                     <div className="relative">
                         <div ref={partnersRef} className="partners-scroll flex gap-6 overflow-x-auto pb-4 scroll-smooth snap-x snap-mandatory opacity-100 parallax-cards">
-                            {featuredPartners.map((partner, index) => (
+                            {featuredPartners.map((partner) => (
                                 <div key={partner.id} className="flex-none w-80 opacity-100 transform translate-y-0 snap-start">
                                     <TrainerProfileCard
                                         initials={partner.name.split(' ').map(n => n[0]).join('')}

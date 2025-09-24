@@ -5,8 +5,8 @@ import { Heart, Target, Users, Globe2, Award, BookOpen } from 'lucide-react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SectionReveal from '@/components/SectionReveal';
-import ScrollParallax from '@/components/ScrollParallax';
 import ValueCard from '@/components/ValueCard';
+import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -178,10 +178,13 @@ export default function About() {
                                 <div ref={founderImageRef} className="text-center">
                                     <div className="relative inline-block">
                                         <div className="relative w-80 h-80 rounded-2xl overflow-hidden border-2 border-slate-300">
-                                            <img
+                                            <Image
                                                 src="/images/nidhi.jpeg"
                                                 alt="Nidhi Dhanju - Founder of PUNE Training Company"
+                                                width={320}
+                                                height={320}
                                                 className="w-full h-full object-cover"
+                                                priority
                                             />
                                             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
                                         </div>
@@ -220,7 +223,7 @@ export default function About() {
                                             In <strong className="text-slate-800">2025</strong>, driven by this vision, Nidhi founded <strong className="text-slate-800">PUNE TRAINING Company</strong>.
                                         </p>
                                         <p className="text-slate-600 leading-relaxed">
-                                            Nidhi holds a <strong>Bachelor's degree from Lady Shri Ram College, Delhi</strong> and a <strong>PhD in Human Resource Development from the University of Minnesota, USA</strong>.
+                                            Nidhi holds a <strong>Bachelor&#39;s degree from Lady Shri Ram College, Delhi</strong> and a <strong>PhD in Human Resource Development from the University of Minnesota, USA</strong>.
                                         </p>
                                     </div>
 
@@ -249,7 +252,7 @@ export default function About() {
                             Join Our Mission
                         </h2>
                         <p className="text-xl mb-8 max-w-3xl mx-auto text-slate-200">
-                            Be part of the revolution that's democratizing corporate training and building stronger organizations through knowledge sharing.
+                            Be part of the revolution that&#39;s democratizing corporate training and building stronger organizations through knowledge sharing.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <a

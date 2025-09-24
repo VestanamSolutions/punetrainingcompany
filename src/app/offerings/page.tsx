@@ -6,7 +6,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SearchAndFilter from '@/components/SearchAndFilter';
 import TrainerCard from '@/components/TrainerCard';
-import SectionReveal from '@/components/SectionReveal';
+// import SectionReveal from '@/components/SectionReveal';
 import { trainingPartners } from '@/data/trainingPartners';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -99,7 +99,7 @@ export default function Offerings() {
                             Our <span className="text-slate-200">Training Partners</span>
                         </h1>
                         <p className="text-lg md:text-xl text-slate-200 mb-8" style={{ opacity: 1 }}>
-                            Connect with expert trainers who can transform your organization's capabilities
+                            Connect with expert trainers who can transform your organization&#39;s capabilities
                         </p>
 
                         <div ref={statsRef} className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto opacity-100">
@@ -156,7 +156,7 @@ export default function Offerings() {
                             </div>
                             <h3 className="text-2xl font-bold text-slate-800 mb-4">No trainers found</h3>
                             <p className="text-slate-600 mb-6 max-w-md mx-auto">
-                                We couldn't find any training partners matching your search criteria. Try adjusting your filters or search terms.
+                                We couldn&#39;t find any training partners matching your search criteria. Try adjusting your filters or search terms.
                             </p>
                             <button
                                 onClick={() => {

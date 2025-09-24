@@ -16,7 +16,7 @@ const ScrollParallax = ({ children, speed = 0.5, className = '' }: ScrollParalla
         if (!element) return;
 
         const handleScroll = () => {
-            const rect = element.getBoundingClientRect();
+            // const rect = element.getBoundingClientRect();
             const scrolled = window.pageYOffset;
             const rate = scrolled * speed;
 

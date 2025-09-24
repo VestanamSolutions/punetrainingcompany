@@ -1,12 +1,14 @@
 import Script from 'next/script';
 
+type StructuredDataType = 'organization' | 'website' | 'person' | 'service';
+
 interface StructuredDataProps {
-    type: 'organization' | 'website' | 'person' | 'service';
-    data?: any;
+    type: StructuredDataType;
+    data?: unknown;
 }
 
-export default function StructuredData({ type, data }: StructuredDataProps) {
-    const getStructuredData = () => {
+export default function StructuredData({ type }: StructuredDataProps) {
+    const getStructuredData = (): Record<string, unknown> => {
         switch (type) {
             case 'organization':
                 return {
@@ -146,7 +148,7 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
                 };
 
             default:
-                return {};
+                return {} as Record<string, unknown>;
         }
     };
 

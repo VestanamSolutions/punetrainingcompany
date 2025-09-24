@@ -77,7 +77,7 @@ const SearchAndFilter = ({ onSearch, onFilterChange, searchQuery, selectedFilter
                 {searchQuery && (
                     <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-xl border-2 border-slate-200 py-2 z-50">
                         <div className="px-4 py-2 text-sm text-slate-600">
-                            Press Enter to search for "{searchQuery}"
+                            Press Enter to search for &quot;{searchQuery}&quot;
                         </div>
                     </div>
                 )}
